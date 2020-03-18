@@ -27,8 +27,19 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-source-prismic',
+      options: {
+        repositoryName: 'tuto-gatsby',
+        // accessToken: `${process.env.API_KEY}`,
+        accessToken: `MC5YbTBMQ0JRQUFDRUFsYUJh.cu-_ve-_vQY_77-977-9M--_ve-_ve-_ve-_ve-_ve-_ve-_ve-_vUsdFO-_ve-_vSvvv70G77-977-977-977-9RRzvv73vv70`,
+        schemas: {
+          homepage: require('./src/schemas/homepage.json'),
+        },
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
