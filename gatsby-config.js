@@ -1,3 +1,5 @@
+
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -31,8 +33,7 @@ module.exports = {
       resolve: 'gatsby-source-prismic',
       options: {
         repositoryName: 'tuto-gatsby',
-        // accessToken: `${process.env.API_KEY}`,
-        accessToken: `MC5YbTBMQ0JRQUFDRUFsYUJh.cu-_ve-_vQY_77-977-9M--_ve-_ve-_ve-_ve-_ve-_ve-_ve-_vUsdFO-_ve-_vSvvv70G77-977-977-977-9RRzvv73vv70`,
+        accessToken: `${process.env.API_KEY}`,
         schemas: {
           homepage: require('./src/schemas/homepage.json'),
         },
@@ -43,3 +44,4 @@ module.exports = {
     `gatsby-plugin-offline`,
   ],
 }
+// 75 73 92 24sdsd
